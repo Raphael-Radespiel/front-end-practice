@@ -8,21 +8,27 @@
 </head>
 <body>
   <header>
-    <nav>
-      <img src="./images/bx-logo.svg" alt="Company logo">
-      <h1>Abstract</h1>
-      <a href="./index.html">Help Center</a>
-      <button>Submit a request</button>
-      <button>Sign in</button>
+    <nav class="header">
+      <img class="header__logo" src="./images/bx-logo.svg" alt="Company logo">
+      <h1 class="header__logo-name">Abstract</h1>
+      <a class="header__link" href="./index.html">Help Center</a>
+      <button class="header__search">
+        <img src="./images/bx-magnifying-glass.svg" alt="Magnifying glass icon">
+      </button>
+      <button class="header__hamburger">
+        <img src="./images/bx-menu.svg" alt="Hamburger icon">
+      </button>
+      <button class="header__submit-request">Submit a request</button>
+      <button class="header__sign-in">Sign in</button>
     </nav> 
   </header>
   <main>
-    <section class="hero">
-      <h1>How can we help?</h1>
-      <input id="help-search" type="search" name="search" placeholder="Search">
+    <section class="search-section">
+      <h1 class="search-section__header">How can we help?</h1>
+      <input class="search-section__search-bar" id="help-search" type="search" name="search" placeholder="Search">
     </section>
-    <section>
-      <div>
+    <section class="catagory-list">
+      <div class="catagory-list__item">
         <div><img src="./images/bx-sitemap.svg" alt="Branching Filesystem Icon"></div>
         <div>
           <h2>Using Abstract</h2>
@@ -31,7 +37,7 @@
           <a href="">Learn More &#8594</a>
         </div>
       </div>
-      <div>
+      <div class="catagory-list__item">
         <div><img src="./images/bx-chalkboard.svg" alt="Chalkboard Icon"></div>
         <div>
           <h2>Manage your account</h2>
@@ -40,7 +46,7 @@
           <a href="">Learn More &#8594</a>
         </div>
       </div>
-      <div>
+      <div class="catagory-list__item">
         <div><img src="./images/bx-grid.svg" alt="Grid Icon"></div>
         <div>
           <h2>Manage organizations, teams, and projects</h2>
@@ -48,7 +54,7 @@
             people and your work.</p>
         </div>
       </div>
-      <div>
+      <div class="catagory-list__item">
         <div><img src="./images/bx-bar-chart-alt.svg" alt="Bar chart Icon"></div>
         <div>
           <h2>Manage billing</h2>
@@ -56,7 +62,7 @@
           <a href="">Learn More &#8594</a>
         </div>
       </div>
-      <div>
+      <div class="catagory-list__item">
         <div><img src="./images/bx-lock-alt.svg" alt="Padlock Icon"></div>
         <div>
           <h2>Authenticate to Abstract</h2>
@@ -64,7 +70,7 @@
           <a href="">Learn More &#8594</a>
         </div>
       </div>
-      <div>
+      <div class="catagory-list__item">
         <div><img src="./images/bx-message-dots.svg" alt="Message notification Icon"></div>
         <div>
           <h2>Abstract support</h2>
@@ -106,7 +112,7 @@
         <li><a href="mailto:info@abstract.com">info@abstract.com</a></li>
       </ul>
     </section>
-    <section>
+    <section class="footer-copyright">
       <img src="./images/bx-logo.svg" alt="Company Logo">
       <p>© Copyright 2022<br>
         Abstract Studio Design, Inc.<br>
