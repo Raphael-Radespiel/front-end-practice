@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+  --ff-primary: 'Roboto', sans-serif;  
+  --clr-primary-dark: #000000;
+  --clr-primary-light: #fff;
+  --clr-accent: #4C5FD5;
+  --clr-neutral: #dadbf1;
+}
+
+/* GLOBAL */
+
