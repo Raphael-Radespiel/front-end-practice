@@ -43,6 +43,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0 0.1em;
 }
 
+.header__logo-name{
+  user-select: none;
+}
+
 .header__link{
   text-decoration: none;
 }
@@ -89,6 +93,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 .search-section__search-bar{
+  border-radius: 10px;
   width: 90%;
   display: block;
   margin: 2em auto;
@@ -107,6 +112,54 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 .search-section__search-bar:hover{
   border: 2px solid var(--clr-accent);
 }
+
+.search-section__search-bar::placeholder{
+  color: var(--clr-primary-dark);
+  opacity: 1;
+} 
+
+.search-section__search-bar:focus{
+  outline: none;
+  border: 2px solid var(--clr-accent);
+}
+
+/* CATAGORY LIST */
+.catagory-list{
+  padding: 0 1em;
+}
+
+.catagory-list__item{
+  margin-top: 8rem;
+  display: flex;
+}
+
+.catagory-list img{
+  width: 4rem;
+  margin: 0 1em;
+}
+
+.catagory-list p{
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #373535;
+  margin-bottom: 1em;
+} 
+
+.catagory-list a{
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.catagory-list a:hover{
+  text-decoration: underline;
+}
+
+.catagory-list h2{
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+}   
+
 
 .hidden{
   display: none;
