@@ -98,7 +98,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   display: block;
   margin: 2em auto;
   height: 4rem;
-  max-width: 32rem;
+  max-width: 40rem;
   color: var(--clr-primary-dark);
   border: 2px solid var(--clr-primary-dark);
   padding-left:1em;
@@ -131,7 +131,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 .catagory-list__row{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -170,13 +169,37 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /* MEDIA QUERY */
 /* THERE SEEMS TO BE THREE MEDIA QUERIES IN THE WEBSITE*/
+@media all and (min-width: 31em){
+  .search-section__header{
+    font-size: 4rem;
+  }
+
+  .catagory-list{
+    padding: 0 2em;
+  }
+
+  .catagory-list__row{
+    align-items: center;
+  }
+}
+
 @media all and (min-width: 48em){
+  .header{
+    padding: 1.5em 4em;
+  }
+
+  .search-section__header{
+    font-size: 5rem;
+    padding-top: 0.5em;
+  }
+
   .catagory-list{
     padding: 0 4em;
   }
 
   .catagory-list__row{
     flex-direction: row;
+    gap: 2em;
     align-items: flex-start;
   }
 
@@ -184,6 +207,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     flex-basis: 100%;
   }
 }
+
+/* 75em for javascript media query header buttons */
 
 /* IMPORTANT PROPERTIES */
 .hidden{
