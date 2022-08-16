@@ -9,17 +9,21 @@
 <body>
   <header>
     <nav class="header">
-      <img class="header__logo" src="./images/bx-logo.svg" alt="Company logo">
-      <h1 class="header__logo-name">Abstract</h1>
+      <img class="header__logo filter--white" src="./images/bx-logo.svg" alt="Company logo">
+      <h1 class="header__logo-name">Abstract |</h1>
       <a class="header__link" href="./index.html">Help Center</a>
-      <button class="header__search">
-        <img src="./images/bx-magnifying-glass.svg" alt="Magnifying glass icon">
-      </button>
-      <button class="header__hamburger">
-        <img src="./images/bx-menu.svg" alt="Hamburger icon">
-      </button>
-      <button class="header__submit-request">Submit a request</button>
-      <button class="header__sign-in">Sign in</button>
+      <div class="header__button-container header__button-container--small-screen">
+        <button class="header__search">
+          <img class="filter--white" src="./images/bx-magnifying-glass.svg" alt="Magnifying glass icon">
+        </button>
+        <button class="header__hamburger">
+          <img class="filter--white" src="./images/bx-menu.svg" alt="Hamburger icon">
+        </button>
+      </div>
+      <div class="hidden header__button-container header__button-container--big-screen">
+        <button class="header__submit-request">Submit a request</button>
+        <button class="header__sign-in">Sign in</button>
+      </div>
     </nav> 
   </header>
   <main>
