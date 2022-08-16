@@ -128,14 +128,22 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0 1em;
 }
 
+.catagory-list__row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .catagory-list__item{
   margin-top: 8rem;
   display: flex;
+  max-width: 34em;
 }
 
 .catagory-list img{
   width: 4rem;
-  margin: 0 1em;
+  margin-right: 1em;
 }
 
 .catagory-list p{
@@ -160,7 +168,24 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin-bottom: 1em;
 }   
 
+/* MEDIA QUERY */
+/* THERE SEEMS TO BE THREE MEDIA QUERIES IN THE WEBSITE*/
+@media all and (min-width: 48em){
+  .catagory-list{
+    padding: 0 4em;
+  }
 
+  .catagory-list__row{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .catagory-list__item{
+    flex-basis: 100%;
+  }
+}
+
+/* IMPORTANT PROPERTIES */
 .hidden{
   display: none;
 }
