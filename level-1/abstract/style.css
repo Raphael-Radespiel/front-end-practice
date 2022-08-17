@@ -6,6 +6,7 @@
   --clr-primary-light: #fff;
   --clr-accent: #4C5FD5;
   --clr-neutral: #dadbf1;
+  --clr-grey: #242426;
 }
 
 /* GLOBAL */
@@ -86,6 +87,44 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 .header__button-container--big-screen{
   display: none;
+}
+
+.header__submit-request,
+.header__sign-in{
+width: 50%;
+height: 5rem;
+background-color: var(--clr-grey);
+color: var(--clr-primary-light);
+font-family: var(--ff-primary);
+font-size: 1.5rem;
+}
+
+.header__submit-request{
+  border: none;
+  border-bottom: 1px solid var(--clr-neutral);
+}
+
+.header__sign-in{
+  border: none;
+  border-top: 1px solid var(--clr-neutral);
+}
+
+.header__sign-in:hover,
+.header__submit-request:hover{
+  cursor: pointer;
+  color: #666;
+}
+
+.visible-hamburger-buttons{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 308px;
+  background: var(--clr-grey);
+  width: 100%;
+  margin-left: -8px;
+  padding: 2rem 0; 
+  gap: 0;
 }
 
 /* SEARCH SECTION */
@@ -262,6 +301,10 @@ footer a:hover{
     padding-top: 0.5em;
   }
 
+  .visible-hamburger-buttons{
+    margin-left: -64px
+  }
+
   .catagory-list{
     padding: 0 4em;
     display: flex;
@@ -340,7 +383,7 @@ footer a:hover{
   }
 
   .header__submit-request{
-    background-color: #242426;
+    background-color: var(--clr-grey);
     border: 1px solid var(--clr-primary-light);
     font-family: var(--ff-primary);
     color: var(--clr-primary-light);
@@ -358,3 +401,4 @@ footer a:hover{
 .hidden{
   display: none;
 }
+
