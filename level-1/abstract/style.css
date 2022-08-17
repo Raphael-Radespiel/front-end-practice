@@ -395,6 +395,12 @@ footer a:hover{
   .header__submit-request:hover{
     cursor: pointer;
   }
+
+  .header__submit-request,
+  .header__sign-in{
+    height: fit-content;
+    width: fit-content;
+  }
 }
 
 /* IMPORTANT PROPERTIES */
