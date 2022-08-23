@@ -1,1 +1,137 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+  --ff-primary: 'Roboto', sans-serif;
+  --clr-bg-red: #F71111;
+  --clr-bg-orange: #F48900;
+  --clr-bg-green: #00FF98;
+  --clr-bg-blue: #013268;
+  --clr-bg-purple: #230046;
+  --clr-font-primary: black;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header__title{
+  font-family: var(--ff-primary);
+  font-size: 2.5rem;
+  padding: 0.5em 0 0.5em 0.5em;
+  color: var(--clr-font-primary);
+}
+
+.sidebar-nav{
+  display: none;
+}
+
+.sidebar-nav__list{
+  list-style: none;
+  position: fixed;
+  bottom: 10vh;
+}
+
+.sidebar-nav__link a{
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-size: 1.5rem;
+  color: var(--clr-font-primary);
+}
+
+.sidebar-nav__link a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ISSUE COMPONENTS */
+.issue-component{
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  min-height: 100vh;
+}
+
+.issue-component__image{
+  max-width: 20rem;
+  width: 80%;
+  height: auto;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.issue-component__description{
+  text-align: center;
+  font-family: var(--ff-primary);
+}
+
+.issue-component__description > *{
+  padding: 0.5em 0;
+}
+
+.issue-component__title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--clr-font-primary);
+}
+
+.issue-component__link{
+  text-decoration: none; 
+  color: var(--clr-font-primary);
+}
+
+.issue-component__link:hover{
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer__description{
+  padding: 2em 0em;
+  color: var(--clr-font-primary);
+  font-family: var(--ff-primary);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.footer__contact{
+  margin: 2em auto; 
+  padding: 0 2em;
+  color: var(--clr-font-primary);
+  font-family: var(--ff-primary);
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer__email-link{
+  color: var(--clr-font-primary);
+  font-size: 1.2rem;
+}
+
+/* MEDIA QUERY */
+@media all and (min-width: 55em){
+  .sidebar-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+
+  .footer__description{
+    max-width: 15rem;
+    text-align: left;
+    margin-left: 3em;
+  }
+}
