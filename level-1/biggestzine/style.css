@@ -11,6 +11,10 @@
   --clr-font-primary: black;
 }
 
+body > *{
+  scroll-snap-align: start;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -119,6 +123,27 @@ html{
 .footer__email-link{
   color: var(--clr-font-primary);
   font-size: 1.2rem;
+}
+
+/* BORDERS */
+#issue-1 .issue-component__image{
+  border: 8px solid red;
+}
+
+#issue-2 .issue-component__image{
+  border: 8px solid orange;
+}
+
+#issue-3 .issue-component__image{
+  border: 8px solid green;
+}
+
+#issue-4 .issue-component__image{
+  border: 8px solid darkblue;
+}
+
+#issue-5 .issue-component__image{
+  border: 8px solid darkorchid;
 }
 
 /* MEDIA QUERY */
